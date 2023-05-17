@@ -10,7 +10,7 @@ const CounterPage = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch("http://41.191.74.42/:8000/txcurr-counter/");
+			const response = await fetch("http://41.191.74.42:8000/txcurr-counter/");
 			const data = await response.json();
 			console.log(data[0].value);
 			return data[0].value;
